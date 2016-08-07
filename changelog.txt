@@ -1,0 +1,166 @@
+v0.9 --Reticulating Splines--
+    July 25, 2016
+Added playlist function
+1. Pulls list+data from current query displayed
+2. Highlights current song
+3. Previous/Next buttons functional
+4. Also controllable via arrow keys
+5. Next song starts automatically
+Added Play Next button function to add songs
+Added song file/DB updating via user interface
+Added logging for easier debugging
+Client database updated silently on the fly with
+    no page reload
+Added file lock per song while updating
+Added hash history storage for file changes
+Added search function by clicking footer details
+Added album art easter egg
+    Removable via escape key
+Added scrollto function for elements out of view
+Cleaned up webpage scripting (couple thousand
+    loose global variables)
+Recently added now sorted by date added
+Lots more sorting and import fixes
+Imported half my personal library (~5000 songs)
+    without any noticable hits to performance or
+    page size (remains around 1mb)
+Database is 1/3 size compared to iTunes'
+Multiple concurrent users handled safely and
+    sessions can persist through server resets
+Mobile browsers currently crash the entire server
+    when closing the window
+
+#################################################
+
+v0.8 --iTunes Understudy--
+    July 17, 2016
+Added support for album art
+Added loading screen
+Added smooth scrolling alphabet selector for
+    artist panel
+Added options bar for songs via right click
+Added Download and details buttons to options
+Details table beefed up and editable by client
+Drastically improved performance issues:
+1. Live updating now entirely handled by JS
+    Not so hacky anymore, objects are added and
+    removed dynamically, more lightweight
+2. JSONs converted to JS object on server
+3. Defaults to 250 Recently added songs instead
+    of entire library so there aren't 5000
+    objects on the page immediately
+4. Database *LITE* is pushed to client on first
+    pageload
+5. Filepaths sent to client so songs play
+    immediately, then details are fetched
+6. Page footprint chopped down to 1/3 of previous
+    ~3mb -> 1mb
+Fixed some song spacing issues in some browsers
+Fixed non-ascii characters slipping through
+
+#################################################
+
+v0.7 --Control Rollout--
+    July 16, 2016
+Added player progress bar w seeking and time
+Added pause/play button
+Added currently playing footer
+Added spacebar to toggle playback
+Added volume slider
+Added download song button
+Added song details table
+Added YouTube external search button
+Cleaned up artists panel
+Websocket will now process different arguments
+1. playlists
+2. song tags
+3. returns json for javascript to parse
+Fixed formatting so buttons don't break line
+Fixed file save issue that only effected Jerome
+
+#################################################
+
+v0.6 --Vanish DatPiff n Rack'em Brackets--
+    July 10, 2016
+Added naming sieve
+1. Moves features from artist tag to title
+2. Formats (feat. ) and [prod ]
+3. Strips DatPiff tags
+4. Can guess artist/title from filename
+5. Preserves comma credits in respect for Kanye
+Updated color scheme
+Source code reorganized with some comments
+Updating tags is now possible serverside, again
+
+#################################################
+
+v0.5 --LIVE--
+    July 8, 2016
+Added working real-time search bar
+Added sort by artist/album by artist default
+Added leftside artist buttons
+Added hacky method for live updating webpage
+Websocket is kept alive now
+Solved gevent python3 compatibility bug
+
+#################################################
+
+v0.4 --Powered By 3 Americas--
+    June 27, 2016
+Started serving on a websocket via gevent, though
+    it behaves suspiciously
+Added search bar
+Added live updating Python search function piped
+    through the websocket while studying the
+    Ballmer Peak and Jerome racked a smooth drum
+    on a track
+Not until later would I find that it crashed the
+    site quickly and consistently
+
+#################################################
+
+v0.3 --Rewrite with C-Types--
+    June 21, 2016
+Song tags now read via pytaglib instead of eyed3
+    to support more than solely mp3 files
+Revamped import functionality
+
+#################################################
+
+v0.2 --Straight from Michigan--
+    May 2016
+Added import function
+Song tags now read and write via eyed3 instead of
+    EasyTag which cannot update tags
+
+#################################################
+
+v0.1 --Pop Tags--
+    January 2016
+JSON database created
+Divvied up CSS
+Added footer to hold playback controls
+Added artist pane structured with alphabet
+Button labels pretty print now (showed URL before)
+Song tags now read via EasyTag
+Buttons show "Artist - Title"
+Branded as "EliTunes"
+
+#################################################
+
+v0.0 --Scheming--
+    Summer 2015
+Server configured with Python backend
+Bare bone webpage started
+1. Song buttons (6 total)
+2. HTML5 audio element
+3. JavaScript for playing song via buttons
+4. Styled buttons blue with CSS
+Goal: personal web based iTunes killer using only:
+    python3, HTML5, CSS & JavaScript
+    (and maybe some C)
+
+#################################################
+
+(2014)
+iTunes language stuck on Ukrainian for a summer

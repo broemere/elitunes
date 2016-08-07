@@ -1,0 +1,4 @@
+#!/bin/bash
+/bin/chown eli:eli /media/eli/shorty/music/*
+/bin/chown -R eli:eli /media/eli/shorty/music/import
+/usr/bin/find /media/eli/shorty/music/import/* -print0 | xargs -0 chmod g+wX

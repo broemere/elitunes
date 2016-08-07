@@ -1,0 +1,35 @@
+cronjob:
+setup under sudo crontab -e
+***** every minute
+script must be made executable to work
+chmod a+x script
+
+
+install gevent ipdb
+wget https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/266721004
+
+apt-get install libcppunit_dev zlibc
+sudo apt-get install libboost-all-dev
+install libtag lastest
+to install
+  cmake -DCMAKE_INSTALL_PREFIX=/usr/local -DCMAKE_BUILD_TYPE=Release -DBUILD_TESTS=on -DBUILD_SHARED_LIBS=ON .
+  make check
+  sudo make install
+
+sudo apt-get install gcc build-essential autoconf libtool pkg-config python-opengl python-imaging python-pyrex python-pyside.qtopengl idle-python2.7 qt4-dev-tools qt4-designer libqtgui4 libqtcore4 libqt4-xml libqt4-test libqt4-script libqt4-network libqt4-dbus python-qt4 python-qt4-gl libgle3 python-dev
+sudo apt-get install python-dateutil python-docutils python-feedparser python-gdata python-jinja2 python-ldap python-libxslt1 python-lxml python-mako python-mock python-openid python-psycopg2 python-psutil python-pybabel python-pychart python-pydot python-pyparsing python-reportlab python-simplejson python-tz python-unittest2 python-vatnumber python-vobject python-webdav python-werkzeug python-xlwt python-yaml python-zsi python-greenlet
+
+update cmake
+
+sudo apt-get install build-essential
+wget http://www.cmake.org/files/v3.2/cmake-3.2.2.tar.gz
+tar xf cmake-3.2.2.tar.gz
+cd cmake-3.2.2
+./configure
+make
+sudo apt-get install checkinstall
+sudo checkinstall
+cmake --version
+
+sudo pip3 install pylibtag
+sudo apt-get install cython

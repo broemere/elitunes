@@ -1,0 +1,39 @@
+gevent-websocket python3-support from github
+change /usr/local/lin/python3.4/dist-packages/gevent_websocket-0.9.5-py3.4.egg/geventwebsocket/websocket.py
+
+-            self.validate_utf8(b(message))
+
++            self.validate_utf8(message)
+
+
+
+
+
+             second_byte |= cls.MASK_MASK
+
+ 
+
+             extra += mask
+
++			
+
++	header = (first_byte, second_byte)
+
+ 
+
+         if extra:
+
+-            header = (first_byte, second_byte, extra)
+
++            return bytes(bytearray(header)) + extra
+
+         else:
+
+-            header = (first_byte, second_byte)
+
+-
+
+-        return bytes(bytearray(header))
+
++            return bytes(bytearray(header))
+
