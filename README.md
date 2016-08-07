@@ -7,6 +7,8 @@ changelog.txt - change tracker
 
 index.tpl - main webpage
 
+musicdb.json - music database (excluded from repo)
+
 musicdb2.py - all the functions
 
 player.css - stylesheet
