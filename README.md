@@ -1,7 +1,7 @@
 # elitunes
 A hastily scraped together summer project
 
-Notable files:
+#Notable files:
 
 changelog.txt - change tracker
 
@@ -17,4 +17,4 @@ webplayer.py - main server script
 
 The rest are outdated/test files or unix commands
 
---Currently on hiatus--
+#--Currently on hiatus--
