@@ -1,5 +1,5 @@
 # elitunes
-A hastily scraped together summer project
+A stable but hastily scraped together summer project
 
 #Notable files:
 
